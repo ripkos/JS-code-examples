@@ -1,0 +1,20 @@
+<%- include('../../fragments/header.ejs') %>
+<main>
+    <h2>Edytuj towar</h2>
+    <form class="form" novalidate onsubmit="return validateForm();">
+        <label for="name">Nazwa towaru <span class="symbol-required">*</span></label>
+        <input type="text" name="name" id="name" placeholder="2-60 znaków" value="Towar" required>
+        <span class="errors-text" id="errorName"></span>
+        <label for="money">Koszt za sztuke <span class="symbol-required">*</span></label>
+        <input type="number" name="money" placeholder="1.00" id="money" value="1.00" required>
+        <span class="errors-text" id="errorMoney"></span>
+        <p id="errorsSummary" class="errors-text"></p>
+        <div class="form-buttons">
+            <input class="form-button-submit" type="submit" value="Zatwierdź">
+            <a class="form-button-cancel" href="public/index.htmll">Anuluj</a>
+        </div>
+
+    </form>
+
+</main>
+<%- include('../../fragments/footer.ejs') %>

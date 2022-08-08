@@ -1,0 +1,31 @@
+<%- include('../../fragments/header.ejs') %>
+<main>
+    <h2>Szczegóły zakupu</h2>
+    <form class="form">
+        <label for="name">Nazwa towaru <span class="symbol-required">*</span></label>
+        <input type="text" name="name" id="name" value="Towar" disabled>
+        <span class="errors-text"></span>
+        <label for="money">Koszt za sztuke <span class="symbol-required">*</span></label>
+        <input type="number" name="money" id="money" value="1.00" disabled>
+        <span class="errors-text"></span>
+        <label for="firstName">Imie <span class="symbol-required">*</span></label>
+        <input type="text" name="firstName" id="firstName" value="Jan" disabled>
+        <span class="errors-text"></span>
+        <label for="lastName">Nazwsiko <span class="symbol-required">*</span></label>
+        <input type="text" name="lastName" id="lastName" value="Kowalski" disabled>
+        <span class="errors-text"></span>
+        <label for="buyDate">Data Zakupu <span class="symbol-required">*</span></label>
+        <input type="text" name="buyDate" id="buyDate" value="19.07.2013" disabled>
+        <span class="errors-text"></span>
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" value="a@aa.aa" disabled>
+        <span class="errors-text"></span>
+
+        <div class="form-buttons">
+            <a href="form-edit.ejs" class="list-actions-button-edit">Edytuj</a>
+            <a href="list.ejs" class="list-actions-button-details">Powrów</a>
+        </div>
+
+    </form>
+</main>
+<%- include('../../fragments/footer.ejs') %>

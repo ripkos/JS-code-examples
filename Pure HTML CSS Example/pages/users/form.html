@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>Sklep ABC</title>
+    <link rel="stylesheet" href="../../../mp3/mp3-frontend/public/css/style.css">
+    <script type="application/javascript" src="../../../mp3/mp3-frontend/public/js/validationCommon.js"></script>
+    <script type="application/javascript" src="../../../mp3/mp3-frontend/public/js/validateUserForm.js"></script>
+<meta name="viewport" content="width=device-width, initial-sacle=1"  /></head>
+<body>
+<header>
+
+    <h1>Sklep ABC</h1>
+    <img src="../../../mp3/mp3-frontend/public/images/logo.png" alt="logo">
+</header>
+<nav>
+    <ul>
+        <li><a href="../../index.html">Strona główna</a></li>
+        <li><a href="../items/list.html">Towary</a></li>
+        <li><a href="../users/list.html" class="active">Użytkownicy</a></li>
+        <li><a href="../buys/list.html">Zakupy</a></li>
+    </ul>
+</nav>
+<main>
+    <h2>Nowy użytkownik</h2>
+    <form class="form" novalidate onsubmit="return validateForm();">
+        <label for="firstName">Imie <span class="symbol-required">*</span></label>
+        <input type="text" name="firstName" id="firstName" placeholder="2-60 znaków" required>
+        <span class="errors-text" id="errorFirstName"></span>
+        <label for="lastName">Nazwsiko <span class="symbol-required">*</span></label>
+        <input type="text" name="lastName" placeholder="2-60 znaków" id="lastName" required>
+        <span class="errors-text" id="errorLastName"></span>
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="np abc@example.com" id="email">
+        <span class="errors-text" id="errorEmail"></span>
+        <p id="errorsSummary" class="errors-text"></p>
+        <div class="form-buttons">
+            <input class="form-button-submit" type="submit" value="Dodaj">
+            <a class="form-button-cancel" href="../../index.html">Anuluj</a>
+        </div>
+
+    </form>
+
+</main>
+<footer>
+    Maksym Poskrypko s20865
+</footer>
+</body>
+</html>

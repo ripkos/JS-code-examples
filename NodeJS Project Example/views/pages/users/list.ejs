@@ -1,0 +1,81 @@
+<%- include('../../fragments/header.ejs') %>
+<main>
+    <h2>Użytkownicy</h2>
+    <table class="table-list">
+        <thead>
+        <tr>
+            <th>
+                Imie
+            </th>
+            <th>
+                Nazwisko
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Akcje
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Jan</td>
+            <td>Kowalski</td>
+            <td>sss@aaa.bbb</td>
+            <td>
+                <ul class="list-actions">
+                    <li>
+                        <a class="list-actions-button-details" href="details.ejs">Szczegóły</a>
+                    </li>
+                    <li >
+                        <a class="list-actions-button-edit" href="form-edit.ejs">Edytuj</a>
+                    </li>
+                    <li >
+                        <a class="list-actions-button-delete"href="">Usuń</a>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>krzysztof</td>
+            <td>Kot</td>
+            <td>Brak</td>
+            <td>
+                <ul class="list-actions">
+                    <li>
+                        <a class="list-actions-button-details" href="details.ejs">Szczegóły</a>
+                    </li>
+                    <li >
+                        <a class="list-actions-button-edit" href="form-edit.ejs">Edytuj</a>
+                    </li>
+                    <li >
+                        <a class="list-actions-button-delete"href="">Usuń</a>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Michal</td>
+            <td>Dąbrowski</td>
+            <td>Dąbrowski@gmail.com</td>
+            <td>
+                <ul class="list-actions">
+                    <li>
+                        <a class="list-actions-button-details" href="details.ejs">Szczegóły</a>
+                    </li>
+                    <li >
+                        <a class="list-actions-button-edit" href="form-edit.ejs">Edytuj</a>
+                    </li>
+                    <li >
+                        <a class="list-actions-button-delete"href="">Usuń</a>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+    <p><a href="form.ejs" class="button-add">Dodaj nowego użytkownika</a></p>
+</main>
+<%- include('../../fragments/footer.ejs') %>

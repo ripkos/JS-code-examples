@@ -1,0 +1,33 @@
+<%- include('../../fragments/header.ejs') %>
+<main>
+    <h2>Nowy towar</h2>
+    <form class="form" novalidate onsubmit="return validateForm();">
+        <label for="amount">Ilość sztuk <span class="symbol-required">*</span></label>
+        <input type="number" name="amount" id="amount" placeholder="1...999" required>
+        <span class="errors-text" id="errorAmount"></span>
+        <label for="buyDate">Data zakupu <span class="symbol-required">*</span></label>
+        <input type="date" name="buyDate" id="buyDate" placeholder="yy-mm-dd" required>
+        <span class="errors-text" id="errorBuyDate"></span>
+        <label for="item">Towar <span class="symbol-required">*</span></label>
+        <select name="item" id="item" required>
+            <option value="" disabled selected hidden>--Wybierz towar--</option>
+            <option value="1">Towar1</option>
+            <option value="2">Towar2</option>
+        </select>
+        <span class="errors-text" id="errorItem"></span>
+        <label for="buyer">Użytkownik <span class="symbol-required">*</span></label>
+        <select name="buyer" id="buyer" required>
+            <option value="" disabled selected hidden>--Wybierz użytkownika--</option>
+            <option value="1">Jan Kowalski</option>
+            <option value="2">Michał Wąs</option>
+        </select>
+        <span class="errors-text" id="errorBuyer"></span>
+        <p id="errorsSummary" class="errors-text"></p>
+        <div class="form-buttons">
+            <input class="form-button-submit" type="submit" value="Dodaj">
+            <a class="form-button-cancel" href="public/index.htmll">Anuluj</a>
+        </div>
+
+    </form>
+</main>
+<%- include('../../fragments/footer.ejs') %>
